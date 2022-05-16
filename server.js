@@ -14,6 +14,11 @@ app.use(express.urlencoded({ extended: true }));
 //sets up route for the public dir.
 app.use(express.static("public"));
 
+// HTML routes
+
+
+// API routs
+
 //start the server on the port
 app.listen(PORT, () => console.log(`listening on port: ${PORT}`));
 
