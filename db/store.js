@@ -12,7 +12,9 @@ const writeFileAsync = util.promisify(fs.writeFile);
 // using class to create an add note method
 class Store {
     getNotes() {
-    return readFileAsync("db/db.json", "utf8")
+    return readFileAsync("db/db.json", "utf8").then((notes) => {
+        return JSON.parse(notes)
+    });
 }
 
     addNote(note) {
@@ -24,5 +26,11 @@ class Store {
         }
 
         const newNote = {title, text, id: uuidv1() };
+        this.getNotes().then((notes) => {
+            notes.push(newNote);
+        });
     }
 }
+
+
+module.exports = new Store();
