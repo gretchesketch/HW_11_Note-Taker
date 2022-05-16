@@ -18,9 +18,9 @@ an app that lets a user input and save notes. if a user decided they no longer n
 
     
 
- * Live URL: 
+ * Live URL: https://gretchesketch.github.io/HW_11_Note-Taker/
 
- * Repo URL:
+ * Repo URL: https://github.com/gretchesketch/HW_11_Note-Taker
 
 
 
@@ -64,6 +64,8 @@ Instalations
 
 
 
- ![img]----- "node prompt image")
- ![img]-----"generated live page image")
- ![img] ----"running tests image")
+ ![img](public\assets\images\npm_start.jpg "starting local host")
+ ![img](public\assets\images\landing_page.jpg "when you pull up the local host in the browser on port 3001")
+ ![img](public\assets\images\create_a_note.jpg "start typing in the fields and click the save icon")
+ ![img](public\assets\images\added_notes.jpg "note added to the side bar displaying title")
+ ![img](public\assets\images\notes_added_to_json_file.jpg "note added on the backend to the json file")
