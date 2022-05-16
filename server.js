@@ -1,11 +1,13 @@
 // required packages
 const express = require("express");
+const htmlRoutes = require("./routes/htmlRoutes");
 
 // initialize app and create port
 // using porcess.env becuase heroku will have the port set then using the or symbol to say or local host 3001
 // heroku might not have port 3001 available since tehy are hosting the app.
 const app = express();
 const PORT = process.env.PORT || 3001;
+
 
 //grabbing teh middle-ware
 // capuring the body of the request and turning it into json
@@ -15,7 +17,7 @@ app.use(express.urlencoded({ extended: true }));
 app.use(express.static("public"));
 
 // HTML routes
-
+app.use("/", htmlRoutes);
 
 // API routs
 

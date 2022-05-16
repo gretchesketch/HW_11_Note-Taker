@@ -5,7 +5,6 @@ Table of Contents
  * Introduction
  * Tech
  * Installation
- * Troubleshooting
  * Contributers
 
 
@@ -35,22 +34,17 @@ This project used the following:
  * inquirer
  * uuid
  * fs (for access to the file system)
- * Jest (for testing)
+ * nodemon
 
 
 Instalations
 --------------------------------------------------------------------------------------------
  
- * it is required to install inquirer in the command line by running 'npm i inquirer'.
+ * it is required to install express in the command line by running 'npm i express'.
 
  * it is required to install uuid in the command line.
 
-
-
- Troubleshooting
-----------------------------------------------------------------------------------------
-
-* jest was used to test the functionality of the project.
+ * installed nodemon using the comand line.
 
 
 
