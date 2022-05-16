@@ -14,6 +14,8 @@ Table of Contents
 
 an app that lets a user input and save notes. if a user decided they no longer need a specific note they can delete it as well.
 
+    For this assignment I was given start code for a complete front end of an application. This application when loaded on the local server (port 3001) as defined in the server.js file will bring a user to a landing page inviting them to start a note. Once clicked indicating to proceed the user will be brought to the notes page that was required to be a path in the server.js file. The user is prompted to enter a title for the note and a body description for the note as well. If the user does not input in either one or both fields an error will occur. Once both fields have some sort of response the user can click the floppy disk icon in the top right corner which will save the note to the left of the screen with its title on display and a red trash can icon next to it. When this happens on the front end it tells the back end to append the note to an array in a json file through the fsutils.js file. When the user clicks the trashcan icon it will delete the note thanks to having similar code as the append to file. It compares the unique id given to that note when it was generated to the deleted one and removes it from the file while only keeping the notes that have other specified id’s thanks to uuid.
+
     
 
  * Live URL: 
@@ -31,10 +33,10 @@ This project used the following:
  * CSS
  * Javascript
  * Node.js
- * inquirer
- * uuid
+ * express.js
+ * uuid (for unique ids assigned to different notes)
  * fs (for access to the file system)
- * nodemon
+ * nodemon (not required but a handy tool)
 
 
 Instalations
@@ -44,7 +46,7 @@ Instalations
 
  * it is required to install uuid in the command line.
 
- * installed nodemon using the comand line.
+ * installed nodemon using the comand line, this was helpful, but not required.
 
 
 
