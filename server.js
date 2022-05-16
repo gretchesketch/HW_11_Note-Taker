@@ -1,6 +1,8 @@
 // required packages
 const express = require("express");
+const router = require("./routes/htmlRoutes");
 const htmlRoutes = require("./routes/htmlRoutes");
+const apiRoutes = require("./routes/apiRoutes");
 
 // initialize app and create port
 // using porcess.env becuase heroku will have the port set then using the or symbol to say or local host 3001
@@ -16,12 +18,13 @@ app.use(express.urlencoded({ extended: true }));
 //sets up route for the public dir.
 app.use(express.static("public"));
 
+// API routes
+app.use("/api", apiRoutes);
+
 // HTML routes
 app.use("/", htmlRoutes);
 
-// API routs
-
-//start the server on the port
+//start server on the port
 app.listen(PORT, () => console.log(`listening on port: ${PORT}`));
 
 
