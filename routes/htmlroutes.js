@@ -1,4 +1,3 @@
-const { dirname } = require("path");
 const path = require("path");
 const router = require("express").Router();
 
