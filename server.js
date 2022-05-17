@@ -1,6 +1,6 @@
 // required packages
 const express = require("express");
-const router = require("./routes/htmlRoutes");
+//const router = require("./routes/htmlRoutes");
 const htmlRoutes = require("./routes/htmlRoutes");
 const apiRoutes = require("./routes/apiRoutes");
 
