@@ -18,7 +18,9 @@ an app that lets a user input and save notes. if a user decided they no longer n
 
     
 
- * Live URL: https://gretchesketch.github.io/HW_11_Note-Taker/
+ * Live URL with heroku: https://tranquil-lowlands-77594.herokuapp.com/
+
+ * Live URL with GITHUB: https://gretchesketch.github.io/HW_11_Note-Taker/
 
  * Repo URL: https://github.com/gretchesketch/HW_11_Note-Taker
 
@@ -37,6 +39,7 @@ This project used the following:
  * uuid (for unique ids assigned to different notes)
  * fs (for access to the file system)
  * nodemon (not required but a handy tool)
+ * heroku
 
 
 Instalations
