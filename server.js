@@ -1,7 +1,7 @@
 // required packages
 const express = require("express");
 //const router = require("./routes/htmlRoutes");
-const htmlRoutes = require("./routes/htmlRoutes");
+const htmlRoutes = require("./routes/htmlroutes");
 const apiRoutes = require("./routes/apiRoutes");
 
 // initialize app and create port
@@ -17,7 +17,6 @@ app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
 //sets up route for the public dir.
 app.use(express.static("public"));
-app.use(require("./routes"))
 
 // API routes
 app.use("/api", apiRoutes);
