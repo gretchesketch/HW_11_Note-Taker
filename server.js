@@ -1,7 +1,7 @@
 // required packages
 const express = require("express");
 //const router = require("./routes/htmlRoutes");
-const htmlRoutes = require("./routes/htmlroutes");
+const htmlroutes = require("./routes/htmlroutes");
 const apiRoutes = require("./routes/apiRoutes");
 
 // initialize app and create port
@@ -22,7 +22,7 @@ app.use(express.static("public"));
 app.use("/api", apiRoutes);
 
 // HTML routes
-app.use("/", htmlRoutes);
+app.use("/", htmlroutes);
 
 //start server on the port
 app.listen(PORT, () => console.log(`listening on port: ${PORT}`));
