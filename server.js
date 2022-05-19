@@ -17,7 +17,7 @@ app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
 //sets up route for the public dir.
 app.use(express.static("public"));
-app.use(require("./routes/htmlRoutes"))
+app.use(require("./routes"))
 
 // API routes
 app.use("/api", apiRoutes);
