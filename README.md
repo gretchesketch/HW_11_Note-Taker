@@ -20,8 +20,6 @@ an app that lets a user input and save notes. if a user decided they no longer n
 
  * Live URL with heroku: https://tranquil-lowlands-77594.herokuapp.com/
 
- * Live URL with GITHUB: https://gretchesketch.github.io/HW_11_Note-Taker/
-
  * Repo URL: https://github.com/gretchesketch/HW_11_Note-Taker
 
 
