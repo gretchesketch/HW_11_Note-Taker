@@ -8,7 +8,7 @@ const {
 } = require("../helpers/fsUtils");
 
 router.get("/notes", (req, res) => {
-    readFromFile("./DB/db.json").then((data) => res.json(JSON.parse(data)));
+    readFromFile("./db/db.json").then((data) => res.json(JSON.parse(data)));
 });
 
 
@@ -16,13 +16,13 @@ router.post("/notes", (req, res) => {
     const newNote = req.body;
     newNote.id = uuidv4();
 
-    readAndAppend(newNote, "./DB/db.json");
+    readAndAppend(newNote, "./db/db.json");
     res.json(newNote);
   });
 
 
   router.delete("/notes/:id", (req, res) => {
-    readAndDelete(req.params.id, "./DB/db.json");
+    readAndDelete(req.params.id, "./db/db.json");
     res.json({ ok: true });
   });
 
