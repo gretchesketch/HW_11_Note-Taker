@@ -72,3 +72,6 @@ Instalations
  ![img](public\assets\images\create_a_note.jpg "start typing in the fields and click the save icon")
  ![img](public\assets\images\added_notes.jpg "note added to the side bar displaying title")
  ![img](public\assets\images\notes_added_to_json_file.jpg "note added on the backend to the json file")
+
+
+  
